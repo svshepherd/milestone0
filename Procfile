@@ -1,1 +1,1 @@
-web: gunicorn stockTrkr:app
+web: gunicorn stockTrkr:stockTrkr
