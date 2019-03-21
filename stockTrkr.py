@@ -48,7 +48,7 @@ def inStock():
         except : # If the stock isn't valid, handle error by reseting the page
             stock = 'retry'
             js = ''
-            html = ''
+            html = traceback.print_exception()
 
         return render_template('index.html', bokehScript=js, text=stock, bodyData=html)
     
